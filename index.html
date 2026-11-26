@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Party Pop</title>
+    <meta name="description" content="꾸미고, 플레이하고, 함께 노는 나만의 파티 월드 Party Pop">
+
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon 연결 -->
+    <link rel="icon" type="image/png" sizes="36x36" href="assets/images/main/favicon.png">
+
+</head>
+
+<body>
+    <!-- 제제 PNG에 남은 낮은 불투명도의 사각 배경만 투명하게 보정 -->
+    <svg class="image-filter-definitions" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <filter id="zeze-alpha-clean" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
+                <feComponentTransfer>
+                    <feFuncA type="linear" slope="1.25" intercept="-0.25" />
+                </feComponentTransfer>
+            </filter>
+        </defs>
+    </svg>
+    <aside class="sidebar"><a href="#home" class="brand" aria-label="Party Pop 홈"><img
+                src="assets/images/layout/logo.svg" alt="Party Pop"></a><button class="menu-toggle"
+            aria-expanded="false" aria-controls="navigation">메뉴
+            ☰</button>
+        <nav id="navigation" class="sections-collapsed"><a href="#home" class="active home-link" aria-expanded="false"
+                aria-controls="nav-panel"><img class="home-icon" src="assets/images/main/home_icon.svg" alt=""
+                    aria-hidden="true">HOME</a>
+            <div id="nav-panel" class="nav-panel"><a href="#about">ABOUT</a><a href="#customize">CUSTOMIZE</a><a
+                    href="#characters">CHARACTERS</a><a href="#rewards">REWARDS</a><a href="#modes">MODES</a><a
+                    class="register-small" href="#registration">pre- <br> registration ▸</a>
+                <div class="social" aria-label="소셜 채널"><img src="assets/images/main/youtube.svg" alt="YouTube"><img
+                        src="assets/images/main/insta.svg" alt="Instagram"><img src="assets/images/main/twitter.svg"
+                        alt="X"></div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 오른쪽 풀페이지 위치 표시: 현재 섹션만 아이콘으로 표시 -->
+    <nav class="page-indicators" aria-label="페이지 섹션 이동">
+        <a class="page-indicator is-current" href="#home" aria-label="HOME" aria-current="location"><span
+                class="page-indicator-dot" aria-hidden="true"></span><img src="assets/images/main/main_sta.png" alt=""
+                aria-hidden="true"><span class="page-indicator-label">HOME</span></a>
+        <a class="page-indicator" href="#about" aria-label="ABOUT"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/flower.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">ABOUT</span></a>
+        <a class="page-indicator" href="#customize" aria-label="CUSTOMIZE"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/diamond.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">CUSTOMIZE</span></a>
+        <a class="page-indicator" href="#characters" aria-label="CHARACTERS"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/heart.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">CHARACTERS</span></a>
+        <a class="page-indicator" href="#rewards" aria-label="REWARDS"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/balloon.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">REWARDS</span></a>
+        <a class="page-indicator" href="#modes" aria-label="PARTY MODES"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/cloud.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">PARTY MODES</span></a>
+        <a class="page-indicator" href="#registration" aria-label="사전 등록"><span class="page-indicator-dot"
+                aria-hidden="true"></span><img src="assets/images/main/moon.png" alt="" aria-hidden="true"><span
+                class="page-indicator-label">사전 등록</span></a>
+    </nav>
+    <main>
+        <section id="home" class="scene hero">
+            <div class="hero-media">
+                <video id="hero-video" class="hero-video" muted loop playsinline preload="metadata" aria-hidden="true"
+                    aria-label="Party Pop 메인 배너 영상">
+                    <source src="assets/images/video/main_banner.mp4" type="video/mp4">
+                </video>
+                <button class="hero-start" type="button" aria-controls="hero-video"
+                    aria-label="Party Pop 로고를 눌러 배너 영상 재생">
+                    <img src="assets/images/main/footer_logo.svg" alt="Party Pop">
+                    <span class="hero-start-caption">clik the logo!</span>
+                </button>
+                <div class="hero-burst" aria-hidden="true"></div>
+                <p class="hero-play-status" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+        <section id="about" class="scene about">
+            <div class="section-inner">
+                <h2 class="pill reveal">ABOUT</h2>
+                <p class="lead reveal">꾸미고, 플레이하고, 함께 노는<br>나만의 <em>파티 월드!</em></p>
+                <div class="features"><a href="#modes" class="glass reveal"><img src="assets/images/main/game.svg"
+                            alt="">
+                        <h3>다양한<br>게임 모드</h3>
+                    </a><a href="#customize" class="glass reveal"><img src="assets/images/main/clothes.svg" alt="">
+                        <h3>자유로운<br>커스텀</h3>
+                    </a><a href="#characters" class="glass reveal"><img src="assets/images/main/people.svg" alt="">
+                        <h3>친구들과<br>함께 플레이</h3>
+                    </a></div>
+            </div>
+        </section>
+        <section id="customize" class="scene customize">
+            <div class="section-inner">
+                <h2 class="pill reveal customize-heading"><span class="customize-heading-text">CUSTOMIZE</span></h2>
+                <div class="custom-layout">
+                    <div class="avatar-stage reveal"><button class="arrow previous" aria-label="이전 캐릭터"><img
+                                src="assets/images/main/Vector_1.svg" alt="" aria-hidden="true"></button>
+                        <div id="avatar" class="layered-avatar" role="group" aria-label="부위별 이미지로 조합한 커스텀 캐릭터">
+                            <img class="avatar-platform" src="assets/images/main/pan.png?v=20261117-fit2" alt="">
+                            <img class="avatar-layer avatar-lower" alt="">
+                            <img class="avatar-layer avatar-upper" alt="">
+                            <img class="avatar-layer avatar-face" src="assets/images/main/face.png?v=20261117-fit2"
+                                alt="">
+                            <img class="avatar-layer avatar-hair" alt="">
+                        </div><button class="arrow next" aria-label="다음 캐릭터"><img src="assets/images/main/Vector_2.svg"
+                                alt="" aria-hidden="true"></button>
+
+                    </div>
+                    <div class="wardrobe reveal">
+                        <div class="custom-panel">
+                            <div class="tabs" role="tablist" aria-label="꾸미기 종류"></div>
+                            <div class="options" id="options"></div>
+                            <div class="swatches" aria-label="컬러 선택"></div>
+
+                        </div>
+                        <p class="lead">패션, 헤어, 액세서리까지,<br>원하는 대로 <em>커스터마이징!</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="characters" class="scene characters">
+            <div class="character-decoration-layer" aria-hidden="true">
+                <div class="character-decoration-sheet">
+                    <i class="character-decoration character-decoration-star"
+                        style="--decor-left:6.619256017505471%;--decor-top:11.86046511627907%;--decor-width:7.0568927789934355%;--decor-height:14.767441860465116%;--sheet-width:1417.0542635658915%;--sheet-height:677.1653543307087%;--sheet-x:7.121836374337846%;--sheet-y:13.915416098226466%;--decor-duration:4.4s;--decor-delay:0s"></i>
+                    <i class="character-decoration character-decoration-star"
+                        style="--decor-left:88.12910284463895%;--decor-top:23.13953488372093%;--decor-width:5.634573304157549%;--decor-height:11.976744186046512%;--sheet-width:1774.7572815533981%;--sheet-height:834.9514563106796%;--sheet-x:93.3913043478261%;--sheet-y:26.28797886393659%;--decor-duration:5s;--decor-delay:-0.67s"></i>
+                    <i class="character-decoration character-decoration-star"
+                        style="--decor-left:5.361050328227571%;--decor-top:26.744186046511626%;--decor-width:3.8293216630196936%;--decor-height:8.488372093023255%;--sheet-width:2611.4285714285716%;--sheet-height:1178.0821917808219%;--sheet-x:5.5745164960182025%;--sheet-y:29.224904701397712%;--decor-duration:5.6000000000000005s;--decor-delay:-1.34s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:26.12330198537095%;--decor-top:6.333333333333334%;--decor-width:3.3960292580982236%;--decor-height:7.555555555555555%;--sheet-width:2944.6153846153843%;--sheet-height:1323.5294117647059%;--sheet-x:27.04164413196322%;--sheet-y:6.850961538461539%;--decor-duration:2.8s;--decor-delay:-0.8s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:15.830721003134796%;--decor-top:21.333333333333336%;--decor-width:1.671891327063741%;--decor-height:3.6666666666666665%;--sheet-width:5981.25%;--sheet-height:2727.2727272727275%;--sheet-x:16.09989373007439%;--sheet-y:22.145328719723185%;--decor-duration:3.3499999999999996s;--decor-delay:-1.4700000000000002s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:84.95297805642633%;--decor-top:23.88888888888889%;--decor-width:2.1421107628004177%;--decor-height:4.333333333333334%;--sheet-width:4668.292682926829%;--sheet-height:2307.6923076923076%;--sheet-x:86.81260010678056%;--sheet-y:24.97096399535424%;--decor-duration:3.9s;--decor-delay:-2.14s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:11.912225705329153%;--decor-top:28.77777777777778%;--decor-width:1.1494252873563218%;--decor-height:2.3333333333333335%;--sheet-width:8700%;--sheet-height:4285.714285714285%;--sheet-x:12.050739957716702%;--sheet-y:29.465301478953354%;--decor-duration:4.45s;--decor-delay:-2.8100000000000005s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:3.0303030303030303%;--decor-top:36.77777777777778%;--decor-width:0.7314524555903866%;--decor-height:1.5555555555555556%;--sheet-width:13671.428571428572%;--sheet-height:6428.571428571429%;--sheet-x:3.052631578947368%;--sheet-y:37.3589164785553%;--decor-duration:2.8s;--decor-delay:-3.4800000000000004s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:94.46185997910136%;--decor-top:37%;--decor-width:2.507836990595611%;--decor-height:5.444444444444444%;--sheet-width:3987.5%;--sheet-height:1836.7346938775513%;--sheet-x:96.89174705251877%;--sheet-y:39.130434782608695%;--decor-duration:3.3499999999999996s;--decor-delay:-4.15s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:2.664576802507837%;--decor-top:38.88888888888889%;--decor-width:1.5151515151515151%;--decor-height:3%;--sheet-width:6600%;--sheet-height:3333.3333333333335%;--sheet-x:2.7055702917771884%;--sheet-y:40.09163802978236%;--decor-duration:3.9s;--decor-delay:-4.82s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:4.597701149425287%;--decor-top:38.88888888888889%;--decor-width:1.5673981191222568%;--decor-height:3.4444444444444446%;--sheet-width:6380%;--sheet-height:2903.2258064516127%;--sheet-x:4.670912951167728%;--sheet-y:40.27617951668584%;--decor-duration:4.45s;--decor-delay:-5.49s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:91.32706374085684%;--decor-top:40.11111111111111%;--decor-width:1.4629049111807733%;--decor-height:3%;--sheet-width:6835.714285714286%;--sheet-height:3333.3333333333335%;--sheet-x:92.6829268292683%;--sheet-y:41.3516609392898%;--decor-duration:2.8s;--decor-delay:-6.16s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:12.173458725182863%;--decor-top:46.111111111111114%;--decor-width:2.4555903866248694%;--decor-height:5.555555555555555%;--sheet-width:4072.3404255319147%;--sheet-height:1800%;--sheet-x:12.479914301017676%;--sheet-y:48.8235294117647%;--decor-duration:3.3499999999999996s;--decor-delay:-6.83s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:14.263322884012538%;--decor-top:51.55555555555556%;--decor-width:0.7836990595611284%;--decor-height:1.6666666666666667%;--sheet-width:12760%;--sheet-height:6000%;--sheet-x:14.375987361769353%;--sheet-y:52.429378531073446%;--decor-duration:3.9s;--decor-delay:-7.5s"></i>
+                    <i class="character-decoration character-decoration-glint"
+                        style="--decor-left:80.77324973876698%;--decor-top:57.44444444444444%;--decor-width:2.19435736677116%;--decor-height:4.888888888888889%;--sheet-width:4557.142857142857%;--sheet-height:2045.4545454545453%;--sheet-x:82.58547008547008%;--sheet-y:60.39719626168224%;--decor-duration:4.45s;--decor-delay:-8.17s"></i>
+                </div>
+            </div>
+
+            <div class="section-inner">
+                <h2 class="pill reveal">CHARACTERS</h2>
+                <p class="lead character-lead reveal">파티를 더 특별하게 만드는<br><em>개성</em> 넘치는 친구들을 만나보세요!</p>
+                <div class="character-grid"></div>
+            </div>
+        </section>
+        <section id="rewards" class="scene rewards">
+            <div class="section-inner">
+                <h2 class="pill reveal reward-heading"><span class="reward-heading-text">REWARDS</span></h2>
+                <div class="reward-layout">
+                    <div class="reveal">
+                        <p class="lead">게임을 플레이하고<br>다양한 <em>보상</em>을<br>획득 하세요!</p><img class="treasure float"
+                            src="assets/images/main/box.png" alt="별과 코인이 가득한 보물상자">
+                    </div>
+                    <div class="reward-grid"></div>
+                </div>
+            </div>
+        </section>
+        <section id="modes" class="scene modes">
+            <div class="section-inner">
+                <h2 class="pill reveal mode-heading"><span class="mode-heading-text">PARTY MODES</span></h2>
+                <div class="mode-grid">
+                    <button class="mode-card mode-team reveal" data-mode="0" aria-pressed="false">
+                        <img class="mode-card-background mode-team-background"
+                            src="assets/images/main/mode-team-card.svg" alt="">
+                        <img class="mode-image mode-team-image" src="assets/images/main/team.png" alt="" loading="lazy">
+                        <span class="mode-label mode-team-label"><img
+                                class="mode-label-background mode-team-label-background"
+                                src="assets/images/main/mode-team-label.svg" alt=""><b
+                                class="mode-text mode-team-text">팀
+                                대전</b></span>
+                    </button>
+                    <button class="mode-card mode-item reveal" data-mode="1" aria-pressed="false">
+                        <img class="mode-card-background mode-item-background"
+                            src="assets/images/main/mode-item-card.svg" alt="">
+                        <img class="mode-image mode-item-image" src="assets/images/main/item.png" alt="" loading="lazy">
+                        <span class="mode-label mode-item-label"><img
+                                class="mode-label-background mode-item-label-background"
+                                src="assets/images/main/mode-item-label.svg" alt=""><b
+                                class="mode-text mode-item-text">아이템
+                                팡팡</b></span>
+                    </button>
+                    <button class="mode-card mode-paint reveal" data-mode="2" aria-pressed="false">
+                        <img class="mode-card-background mode-paint-background"
+                            src="assets/images/main/mode-paint-card.svg" alt="">
+                        <img class="mode-image mode-paint-image" src="assets/images/main/color_paint.png" alt=""
+                            loading="lazy">
+                        <span class="mode-label mode-paint-label"><img
+                                class="mode-label-background mode-paint-label-background"
+                                src="assets/images/main/mode-paint-label.svg" alt=""><b
+                                class="mode-text mode-paint-text">컬러
+                                페인트</b></span>
+                    </button>
+                </div>
+                <p class="lead mode-caption reveal">팀을 이루고 다양한 모드에서 재미있게 대결하세요!</p>
+
+            </div>
+        </section>
+        <section id="registration" class="scene registration">
+            <!-- 분리된 푸터 별과 반짝임: 원본 캔버스 위치 유지 -->
+            <div class="footer-decoration-layer" aria-hidden="true">
+                <div class="footer-decoration-sheet">
+                    <i class="character-decoration footer-decoration-star"
+                        style="--decor-left:20.908072%;--decor-top:5.328798%;--decor-width:2.522422%;--decor-height:4.988662%;--sheet-width:3964.444444%;--sheet-height:2004.545455%;--sheet-x:21.449109%;--sheet-y:5.608592%;--decor-duration:4.40s;--decor-delay:0.00s"></i>
+                    <i class="character-decoration footer-decoration-star"
+                        style="--decor-left:75.560538%;--decor-top:17.800454%;--decor-width:2.242152%;--decor-height:4.308390%;--sheet-width:4460.000000%;--sheet-height:2321.052632%;--sheet-x:77.293578%;--sheet-y:18.601896%;--decor-duration:5.00s;--decor-delay:-0.67s"></i>
+                    <i class="character-decoration footer-decoration-star"
+                        style="--decor-left:5.044843%;--decor-top:26.643991%;--decor-width:2.634529%;--decor-height:5.328798%;--sheet-width:3795.744681%;--sheet-height:1876.595745%;--sheet-x:5.181347%;--sheet-y:28.143713%;--decor-duration:5.60s;--decor-delay:-1.34s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:24.719731%;--decor-top:2.497162%;--decor-width:4.820628%;--decor-height:9.080590%;--sheet-width:2074.418605%;--sheet-height:1101.250000%;--sheet-x:25.971731%;--sheet-y:2.746567%;--decor-duration:2.80s;--decor-delay:0.00s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:16.872197%;--decor-top:3.291714%;--decor-width:2.578475%;--decor-height:5.334847%;--sheet-width:3878.260870%;--sheet-height:1874.468085%;--sheet-x:17.318757%;--sheet-y:3.477218%;--decor-duration:3.35s;--decor-delay:-0.67s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:32.230942%;--decor-top:8.513053%;--decor-width:1.681614%;--decor-height:2.951192%;--sheet-width:5946.666667%;--sheet-height:3388.461538%;--sheet-x:32.782212%;--sheet-y:8.771930%;--decor-duration:3.90s;--decor-delay:-1.34s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:72.141256%;--decor-top:13.961407%;--decor-width:2.970852%;--decor-height:5.334847%;--sheet-width:3366.037736%;--sheet-height:1874.468085%;--sheet-x:74.350087%;--sheet-y:14.748201%;--decor-duration:4.45s;--decor-delay:-2.01s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:79.091928%;--decor-top:18.047673%;--decor-width:2.802691%;--decor-height:5.788876%;--sheet-width:3568.000000%;--sheet-height:1727.450980%;--sheet-x:81.372549%;--sheet-y:19.156627%;--decor-duration:2.80s;--decor-delay:-2.68s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:6.614350%;--decor-top:19.863791%;--decor-width:2.746637%;--decor-height:5.334847%;--sheet-width:3640.816327%;--sheet-height:1874.468085%;--sheet-x:6.801153%;--sheet-y:20.983213%;--decor-duration:3.35s;--decor-delay:-3.35s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:9.809417%;--decor-top:24.290579%;--decor-width:2.242152%;--decor-height:4.426788%;--sheet-width:4460.000000%;--sheet-height:2258.974359%;--sheet-x:10.034404%;--sheet-y:25.415677%;--decor-duration:3.90s;--decor-delay:-4.02s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:97.141256%;--decor-top:37.911464%;--decor-width:1.401345%;--decor-height:2.951192%;--sheet-width:7136.000000%;--sheet-height:3388.461538%;--sheet-x:98.521887%;--sheet-y:39.064327%;--decor-duration:4.45s;--decor-delay:-4.69s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:96.468610%;--decor-top:40.408627%;--decor-width:2.746637%;--decor-height:6.583428%;--sheet-width:3640.816327%;--sheet-height:1518.965517%;--sheet-x:99.193084%;--sheet-y:43.256379%;--decor-duration:2.80s;--decor-delay:-5.36s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:83.520179%;--decor-top:43.246311%;--decor-width:2.073991%;--decor-height:3.745743%;--sheet-width:4821.621622%;--sheet-height:2669.696970%;--sheet-x:85.289067%;--sheet-y:44.929245%;--decor-duration:3.35s;--decor-delay:-6.03s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:19.226457%;--decor-top:44.721907%;--decor-width:2.186099%;--decor-height:4.086266%;--sheet-width:4574.358974%;--sheet-height:2447.222222%;--sheet-x:19.656160%;--sheet-y:46.627219%;--decor-duration:3.90s;--decor-delay:-6.70s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:79.260090%;--decor-top:49.148695%;--decor-width:1.793722%;--decor-height:3.291714%;--sheet-width:5575.000000%;--sheet-height:3037.931034%;--sheet-x:80.707763%;--sheet-y:50.821596%;--decor-duration:4.45s;--decor-delay:-7.37s"></i>
+                    <i class="character-decoration footer-decoration-glint"
+                        style="--decor-left:81.221973%;--decor-top:64.018161%;--decor-width:2.634529%;--decor-height:5.334847%;--sheet-width:3795.744681%;--sheet-height:1874.468085%;--sheet-x:83.419689%;--sheet-y:67.625899%;--decor-duration:2.80s;--decor-delay:-8.04s"></i>
+                </div>
+            </div>
+            <img class="footer-person left float" src="assets/images/main/footer_luna.png" alt="손을 흔드는 루나"><img
+                class="footer-person right float" src="assets/images/main/footer_poppy.png" alt="손을 흔드는 포피">
+            <div class="register-content reveal"><img class="footer-logo" src="assets/images/main/footer_logo.svg"
+                    alt="Party Pop">
+                <p class="lead">지금, <strong>Party Pop</strong>에 사전 등록하고<br><em>특별한 보상</em>을 가장 먼저 만나보세요!</p>
+                <div class="footer-gift-stage"><img class="gift float" src="assets/images/main/packge.png"
+                        alt="사전 등록 선물"><i class="gift-spark gift-spark-one" aria-hidden="true"></i><i
+                        class="gift-spark gift-spark-two" aria-hidden="true"></i></div><button class="cta"
+                    id="register-open">사전 등록 하러 가기 ▸</button>
+            </div>
+            <footer>© 2026 Party Pop. All Rights Reserved.</footer>
+        </section>
+    </main>
+
+    <script src="Js/customize-data.js?v=unified"></script>
+    <script src="Js/script.js?v=images-path"></script>
+</body>
+
+</html>
