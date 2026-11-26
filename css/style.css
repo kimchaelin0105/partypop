@@ -172,7 +172,7 @@ em {
 }
 
 .about {
-    background-image: url('../assets/images/main/about_background.jpg');
+    background-image: url('../images/main/about_background.jpg');
 }
 
 .features {
@@ -208,7 +208,7 @@ em {
 }
 
 .customize {
-    background-image: url('../assets/images/main/costom_background.jpg');
+    background-image: url('../images/main/costom_background.jpg');
 }
 
 .custom-layout {
@@ -312,7 +312,7 @@ em {
 }
 
 .characters {
-    background-image: url('../assets/images/main/characters_background.jpg');
+    background-image: url('../images/main/characters_background.jpg');
 }
 
 .character-lead {
@@ -363,7 +363,7 @@ em {
 }
 
 .rewards {
-    background-image: url('../assets/images/main/rewards_background.jpg');
+    background-image: url('../images/main/rewards_background.jpg');
 }
 
 .reward-layout {
@@ -413,7 +413,7 @@ em {
 }
 
 .registration {
-    background-image: url('../assets/images/main/Footer_background.jpg?v=separated');
+    background-image: url('../images/main/Footer_background.jpg?v=separated');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1623,7 +1623,7 @@ dialog .cta {
     border: 0;
     padding: 0;
     border-radius: 0;
-    background: transparent url('../assets/images/main/c_button.svg') center/100% 100% no-repeat;
+    background: transparent url('../images/main/c_button.svg') center/100% 100% no-repeat;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2644,7 +2644,7 @@ dialog .cta {
    ========================================================= */
 
 .modes {
-    background-image: url('../assets/images/main/party_modes_background.jpg');
+    background-image: url('../images/main/party_modes_background.jpg');
 }
 
 .modes .mode-grid {
@@ -3325,12 +3325,12 @@ dialog .cta {
 
     .registration .register-content>.lead::before {
         left: calc(100vw * -72 / 1914);
-        background-image: url('../assets/images/main/ping_1.png');
+        background-image: url('../images/main/ping_1.png');
     }
 
     .registration .register-content>.lead::after {
         right: calc(100vw * -72 / 1914);
-        background-image: url('../assets/images/main/ping 2.png');
+        background-image: url('../images/main/ping 2.png');
     }
 
     .registration .footer-gift-stage {
@@ -3720,12 +3720,12 @@ dialog .cta {
 }
 
 .character-decoration-star {
-    background-image: url('../assets/images/main/star.png?v=revised');
+    background-image: url('../images/main/star.png?v=revised');
     animation-name: character-star-shine;
 }
 
 .character-decoration-glint {
-    background-image: url('../assets/images/main/Sparkle.png?v=separated');
+    background-image: url('../images/main/Sparkle.png?v=separated');
     animation-name: character-glint-shine;
 }
 
@@ -3892,12 +3892,12 @@ html.fullpage-enabled main>.scene {
 }
 
 .footer-decoration-star {
-    background-image: url('../assets/images/main/footer_star.png');
+    background-image: url('../images/main/footer_star.png');
     animation-name: character-star-shine;
 }
 
 .footer-decoration-glint {
-    background-image: url('../assets/images/main/footer_sparkle.png');
+    background-image: url('../images/main/footer_sparkle.png');
     animation-name: character-glint-shine;
 }
 
